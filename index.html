@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  
+  <script src="cylinder.js"></script>
+  <script src="van.js"></script>
+  
+</head>
+
+<body>
+    <a-assets>      
+
+        <a-asset-item id="van-obj" src="./Exquisite Kieran/tinker.obj"></a-asset-item>
+        <a-asset-item id="van-mtl" src="./Exquisite Kieran/obj.mtl"></a-asset-item>
+      </a-assets>
+      <a-scene background="color:lightblue">
+    
+        <a-camera position="0 0 0"></a-camera>
+    
+    <a-entity obj-model="obj:#van-obj; mtl:#van-mtl" postion="0 0
+     0" rotation="-90 0 0" scale="0.1 .1 .1" move-van>
+     <a-cylinder position="5 -22.5 4" rotation="90 0 0"radius="10" height=".5" cylid></a-cylinder>
+
+    </a-entity>
+
+  </a-scene>
+
+</body>
+
+</html>
+
